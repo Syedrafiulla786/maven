@@ -1,0 +1,105 @@
+{
+   "name": "React",
+   "version": "1.0-SNAPSHOT",
+   "description": "A Spring MVC project using React+Redux for the views.",
+   "author": "Bernardo Martínez Garrido",
+   "homepage": "https://github.com/bernardo-mg/React",
+   "license": "MIT",
+   "keywords": [
+      "keywords"
+   ],
+   "repository": {
+      "type": "git",
+      "url": "git@github.com:bernardo-mg/React.git"
+   },
+   "bugs": {
+      "url": "https://www.github.com/bernardo-mg/React/issues"
+   },
+   "scripts": {
+      "development": "cross-env NODE_ENV=development webpack --config webpack.dev.js",
+      "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
+      "test": "jest"
+   },
+   "jest": {
+      "testRegex": "src/main/js/__tests__/.*\\.(js|jsx)$",
+      "verbose": true,
+      "transform": {
+         "^.+\\.js$": "babel-jest"
+      },
+      "globals": {
+         "NODE_ENV": "test"
+      },
+      "moduleFileExtensions": [
+         "js"
+      ],
+      "moduleDirectories": [
+         "node_modules",
+         "src/main/js"
+      ]
+   },
+   "dependencies": {
+      "formik": "~2.1.4",
+      "history": "~5.0.0",
+      "lodash": "~4.17.19",
+      "@material-ui/core": "~4.11.0",
+      "@material-ui/icons": "~4.9.1",
+      "normalizr": "~3.6.0",
+      "notistack": "~0.9.9",
+      "react": "~16.13.1",
+      "react-dom": "~16.13.1",
+      "react-intl": "~5.4.0",
+      "react-router-dom": "~5.2.0",
+      "react-redux": "~7.2.0",
+      "redux": "~4.0.5",
+      "redux-saga": "~1.1.3",
+      "reselect": "~4.0.0",
+      "superagent": "~5.3.1",
+      "yup": "~0.28.3"
+   },
+   "devDependencies": {
+      "@babel/core": "~7.10.5",
+      "@babel/plugin-proposal-class-properties": "~7.10.4",
+      "@babel/plugin-proposal-function-bind": "~7.10.5",
+      "@babel/plugin-proposal-object-rest-spread": "~7.10.4",
+      "@babel/plugin-transform-regenerator": "~7.10.4",
+      "@babel/polyfill": "~7.10.4",
+      "@babel/preset-env": "~7.10.4",
+      "@babel/preset-react": "~7.10.4",
+      "@babel/register": "~7.10.5",
+      "@redux-saga/simple-saga-monitor": "~1.1.2",
+      "@redux-saga/testing-utils": "~1.1.3",
+      "babel-eslint": "~10.1.0",
+      "babel-jest": "~26.1.0",
+      "babel-loader": "~8.1.0",
+      "babel-plugin-react-intl": "~7.8.3",
+      "copy-webpack-plugin": "~6.0.3",
+      "cross-env": "~7.0.2",
+      "css-loader": "^4.2.0",
+      "enzyme": "~3.11.0",
+      "enzyme-adapter-react-16": "~1.15.1",
+      "eslint": "~7.5.0",
+      "eslint-config-airbnb": "~18.2.0",
+      "eslint-import-resolver-webpack": "~0.12.2",
+      "eslint-loader": "~4.0.2",
+      "eslint-plugin-babel": "~5.3.1",
+      "eslint-plugin-import": "~2.22.0",
+      "eslint-plugin-jsx-a11y": "~6.3.1",
+      "eslint-plugin-react": "~7.20.3",
+      "eslint-plugin-react-hooks": "~4.0.8",
+      "http-server": "~0.9.0",
+      "jest": "~26.1.0",
+      "optimize-css-assets-webpack-plugin": "~5.0.1",
+      "prop-types": "~15.7.2",
+      "redux-devtools": "~3.5.0",
+      "redux-devtools-dock-monitor": "~1.1.3",
+      "redux-devtools-log-monitor": "~1.4.0",
+      "redux-logger": "~3.0.6",
+      "style-loader": "^1.2.1",
+      "uglifyjs-webpack-plugin": "~2.2.0",
+      "webpack": "~4.43.0",
+      "webpack-bundle-analyzer": "~3.8.0",
+      "webpack-cli": "~3.3.11",
+      "webpack-dev-middleware": "~3.7.2",
+      "webpack-merge": "~4.2.2"
+   }
+}
